@@ -1,0 +1,28 @@
+# macOS
+.DS_Store
+
+# Xcode user state (machine-specific, never share)
+xcuserdata/
+*.xcuserstate
+*.xcuserdatad/
+
+# Xcode build output
+DerivedData/
+build/
+
+# Swift Package Manager cache
+.swiftpm/
+.build/
+
+# .NET build output (also covered in backend/.gitignore but belt-and-suspenders)
+**/bin/
+**/obj/
+
+# IDE files
+.vs/
+.idea/
+.vscode/
+
+# Local secrets (also in backend/.gitignore)
+backend/appsettings.Development.json
+backend/appsettings.*.local.json

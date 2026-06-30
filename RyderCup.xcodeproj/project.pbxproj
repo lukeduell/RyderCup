@@ -1,0 +1,548 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		113BF73088735163F9C5A7FD /* SideGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34E22A1D261271E9C72C111 /* SideGame.swift */; };
+		1B23EE2E577B31DAD375FA62 /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FECD329D42F2A0B03A6A455 /* Score.swift */; };
+		205421AA06D22E53B46F2F33 /* ScoringSubviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3E0FCCF708588152C7BE8E /* ScoringSubviews.swift */; };
+		40384662648BEF2E6DC09DEF /* TeamEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F96E077423E9964747A1F7 /* TeamEditView.swift */; };
+		440D3CE45C93E2C9E662785C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEAB074972FF2A8E49D06FB7 /* Assets.xcassets */; };
+		4C0D96CD00E061EC02C70C32 /* JoinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1B289963273CB9D1876334 /* JoinView.swift */; };
+		5DC239B927E0BB268718889A /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A7443A2F5A3BE7DF27FE8B /* SettingsView.swift */; };
+		7CCBB9300DDAA806F893311C /* TournamentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91604F6A742F6A927399AB59 /* TournamentViewModel.swift */; };
+		7D4D26CD4913538575F07945 /* LeaderboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4C0AB796BD57D9AB7074BF /* LeaderboardView.swift */; };
+		857ACFF23FFAC3F8ECF233D5 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9ED270EE82BAA7C8E638BA7 /* APIClient.swift */; };
+		86763BF6EF3C09D30DD4B3D6 /* PlayersEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D61F8B67051293B73E23F40 /* PlayersEditView.swift */; };
+		8B864E00826C627BE6A74C3C /* RyderCupApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308C865AECB02FAAB4A05C2A /* RyderCupApp.swift */; };
+		8CF6249C25B894ADBCF07C61 /* Tournament.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFBB137EA6DC20781915718 /* Tournament.swift */; };
+		9EEE4FB03115C7AD5B8B84EF /* RoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D00B3E5F5FD110A97B838D /* RoundView.swift */; };
+		A17F2ABB3232FF7EE50DE5DE /* ScoringEngineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B90C4932000139C8CB57DB4 /* ScoringEngineTests.swift */; };
+		A5C46F9B1091EB48E371B662 /* SideGamesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4573192E9515EE50ACDA323 /* SideGamesView.swift */; };
+		AD90F3D3A01FD011FC55661D /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19EBC9EF9EF4595814067BE /* Player.swift */; };
+		B252935E4894591E564DB93F /* Round.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E0821A2CB2F38CD35CEBE7 /* Round.swift */; };
+		BCB902F2B5E0EEFCAEAAC114 /* TeamsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF84925D0E16F67022C58402 /* TeamsView.swift */; };
+		C44D6A51E7AC6B4B56FD0814 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75F1825F4C43D029CFB4DB9 /* MainTabView.swift */; };
+		D4B022EFD3D26C27E1B7735A /* RoundsEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5645C30AD4AEF8E7C646A1D /* RoundsEditView.swift */; };
+		D9AD850525480FD8F6BE599A /* APIConfigView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AD9093AAC35B8B7F64CDF6 /* APIConfigView.swift */; };
+		DC9FDCED25C497E5E4C82202 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D86275FEC88FDCB3DA96533 /* AppConfig.swift */; };
+		E2C3AD9DF7D884BCA2C7A3B6 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909EDCB72CAF5A4586C0B645 /* Course.swift */; };
+		E65342F562396F578302A3BA /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75F94B73E7F5E4B8AED22AC /* RootView.swift */; };
+		EBBF4553EEF0AA80C71B1D15 /* CourseEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9870953FCCD5897D4765778 /* CourseEditView.swift */; };
+		EC53616C4EA212EAAE1ACF38 /* ScoringEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573F1F3EF36C9A911CC9927F /* ScoringEngine.swift */; };
+		FE1F9C85AF70F7825AF7457E /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE865EA15157877C750711F /* Team.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		419C3BCDDBC882D210085827 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 89668C824047FD6A7968C625 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B0503391C15D6E18318B6297;
+			remoteInfo = RyderCup;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0F3E0FCCF708588152C7BE8E /* ScoringSubviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoringSubviews.swift; sourceTree = "<group>"; };
+		0FECD329D42F2A0B03A6A455 /* Score.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Score.swift; sourceTree = "<group>"; };
+		1E4C0AB796BD57D9AB7074BF /* LeaderboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardView.swift; sourceTree = "<group>"; };
+		308C865AECB02FAAB4A05C2A /* RyderCupApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RyderCupApp.swift; sourceTree = "<group>"; };
+		52AD9093AAC35B8B7F64CDF6 /* APIConfigView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConfigView.swift; sourceTree = "<group>"; };
+		573F1F3EF36C9A911CC9927F /* ScoringEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoringEngine.swift; sourceTree = "<group>"; };
+		5EDB5C8F3A847FC7B1F14BC7 /* RyderCupTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = RyderCupTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		66F96E077423E9964747A1F7 /* TeamEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamEditView.swift; sourceTree = "<group>"; };
+		6B90C4932000139C8CB57DB4 /* ScoringEngineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoringEngineTests.swift; sourceTree = "<group>"; };
+		6D61F8B67051293B73E23F40 /* PlayersEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersEditView.swift; sourceTree = "<group>"; };
+		6E1B289963273CB9D1876334 /* JoinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinView.swift; sourceTree = "<group>"; };
+		76E0821A2CB2F38CD35CEBE7 /* Round.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Round.swift; sourceTree = "<group>"; };
+		7D4D3687B61AFF409F8D7990 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8DFBB137EA6DC20781915718 /* Tournament.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tournament.swift; sourceTree = "<group>"; };
+		909EDCB72CAF5A4586C0B645 /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
+		91604F6A742F6A927399AB59 /* TournamentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TournamentViewModel.swift; sourceTree = "<group>"; };
+		9D86275FEC88FDCB3DA96533 /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		A4573192E9515EE50ACDA323 /* SideGamesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideGamesView.swift; sourceTree = "<group>"; };
+		A6D00B3E5F5FD110A97B838D /* RoundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundView.swift; sourceTree = "<group>"; };
+		A9870953FCCD5897D4765778 /* CourseEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseEditView.swift; sourceTree = "<group>"; };
+		B19EBC9EF9EF4595814067BE /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		B75F94B73E7F5E4B8AED22AC /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		B7A7443A2F5A3BE7DF27FE8B /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		BAE865EA15157877C750711F /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		CEAB074972FF2A8E49D06FB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D34E22A1D261271E9C72C111 /* SideGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideGame.swift; sourceTree = "<group>"; };
+		D4DF92173AA3A4077888C04F /* RyderCup.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = RyderCup.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5645C30AD4AEF8E7C646A1D /* RoundsEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundsEditView.swift; sourceTree = "<group>"; };
+		DF84925D0E16F67022C58402 /* TeamsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsView.swift; sourceTree = "<group>"; };
+		E75F1825F4C43D029CFB4DB9 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		E9ED270EE82BAA7C8E638BA7 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		466D9A45B563BC5C63B18EBE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				52AD9093AAC35B8B7F64CDF6 /* APIConfigView.swift */,
+				A9870953FCCD5897D4765778 /* CourseEditView.swift */,
+				6E1B289963273CB9D1876334 /* JoinView.swift */,
+				1E4C0AB796BD57D9AB7074BF /* LeaderboardView.swift */,
+				E75F1825F4C43D029CFB4DB9 /* MainTabView.swift */,
+				6D61F8B67051293B73E23F40 /* PlayersEditView.swift */,
+				B75F94B73E7F5E4B8AED22AC /* RootView.swift */,
+				D5645C30AD4AEF8E7C646A1D /* RoundsEditView.swift */,
+				A6D00B3E5F5FD110A97B838D /* RoundView.swift */,
+				0F3E0FCCF708588152C7BE8E /* ScoringSubviews.swift */,
+				B7A7443A2F5A3BE7DF27FE8B /* SettingsView.swift */,
+				A4573192E9515EE50ACDA323 /* SideGamesView.swift */,
+				66F96E077423E9964747A1F7 /* TeamEditView.swift */,
+				DF84925D0E16F67022C58402 /* TeamsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		72C5690BE4DD45AAACB9E4E5 /* RyderCup */ = {
+			isa = PBXGroup;
+			children = (
+				CEAB074972FF2A8E49D06FB7 /* Assets.xcassets */,
+				7D4D3687B61AFF409F8D7990 /* Info.plist */,
+				308C865AECB02FAAB4A05C2A /* RyderCupApp.swift */,
+				DD8023E371E3A5B2F193778A /* Models */,
+				BC5D75BF5E01C84A1AF0DDF2 /* Services */,
+				9480171B8214865F21E20676 /* ViewModels */,
+				466D9A45B563BC5C63B18EBE /* Views */,
+			);
+			path = RyderCup;
+			sourceTree = "<group>";
+		};
+		7EEB3A513719A6E353C097AD /* RyderCupTests */ = {
+			isa = PBXGroup;
+			children = (
+				6B90C4932000139C8CB57DB4 /* ScoringEngineTests.swift */,
+			);
+			path = RyderCupTests;
+			sourceTree = "<group>";
+		};
+		85F6E50435991FEE115E1563 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D4DF92173AA3A4077888C04F /* RyderCup.app */,
+				5EDB5C8F3A847FC7B1F14BC7 /* RyderCupTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9480171B8214865F21E20676 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				91604F6A742F6A927399AB59 /* TournamentViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		BC5D75BF5E01C84A1AF0DDF2 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E9ED270EE82BAA7C8E638BA7 /* APIClient.swift */,
+				9D86275FEC88FDCB3DA96533 /* AppConfig.swift */,
+				573F1F3EF36C9A911CC9927F /* ScoringEngine.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		DD8023E371E3A5B2F193778A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				909EDCB72CAF5A4586C0B645 /* Course.swift */,
+				B19EBC9EF9EF4595814067BE /* Player.swift */,
+				76E0821A2CB2F38CD35CEBE7 /* Round.swift */,
+				0FECD329D42F2A0B03A6A455 /* Score.swift */,
+				D34E22A1D261271E9C72C111 /* SideGame.swift */,
+				BAE865EA15157877C750711F /* Team.swift */,
+				8DFBB137EA6DC20781915718 /* Tournament.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EBE0FA63D66CF774DC08862E = {
+			isa = PBXGroup;
+			children = (
+				72C5690BE4DD45AAACB9E4E5 /* RyderCup */,
+				7EEB3A513719A6E353C097AD /* RyderCupTests */,
+				85F6E50435991FEE115E1563 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		772E43E6BF2842DC5416AA45 /* RyderCupTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3097E7A35FE9B7CB64B2C52 /* Build configuration list for PBXNativeTarget "RyderCupTests" */;
+			buildPhases = (
+				DDBC6D12A3BDFD989E787E12 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AC9690D0F3A72F32D169CBA5 /* PBXTargetDependency */,
+			);
+			name = RyderCupTests;
+			packageProductDependencies = (
+			);
+			productName = RyderCupTests;
+			productReference = 5EDB5C8F3A847FC7B1F14BC7 /* RyderCupTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B0503391C15D6E18318B6297 /* RyderCup */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44E37357433A4A844BF801A2 /* Build configuration list for PBXNativeTarget "RyderCup" */;
+			buildPhases = (
+				0CA72B59D1E9882DBF541DFE /* Sources */,
+				20F81B2763CB4D5AAA76DF61 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RyderCup;
+			packageProductDependencies = (
+			);
+			productName = RyderCup;
+			productReference = D4DF92173AA3A4077888C04F /* RyderCup.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		89668C824047FD6A7968C625 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					772E43E6BF2842DC5416AA45 = {
+						DevelopmentTeam = 6RWZ9FASY7;
+					};
+					B0503391C15D6E18318B6297 = {
+						DevelopmentTeam = 6RWZ9FASY7;
+					};
+				};
+			};
+			buildConfigurationList = 1A781081D018149A19131CF0 /* Build configuration list for PBXProject "RyderCup" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = EBE0FA63D66CF774DC08862E;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 85F6E50435991FEE115E1563 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B0503391C15D6E18318B6297 /* RyderCup */,
+				772E43E6BF2842DC5416AA45 /* RyderCupTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		20F81B2763CB4D5AAA76DF61 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				440D3CE45C93E2C9E662785C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0CA72B59D1E9882DBF541DFE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				857ACFF23FFAC3F8ECF233D5 /* APIClient.swift in Sources */,
+				D9AD850525480FD8F6BE599A /* APIConfigView.swift in Sources */,
+				DC9FDCED25C497E5E4C82202 /* AppConfig.swift in Sources */,
+				E2C3AD9DF7D884BCA2C7A3B6 /* Course.swift in Sources */,
+				EBBF4553EEF0AA80C71B1D15 /* CourseEditView.swift in Sources */,
+				4C0D96CD00E061EC02C70C32 /* JoinView.swift in Sources */,
+				7D4D26CD4913538575F07945 /* LeaderboardView.swift in Sources */,
+				C44D6A51E7AC6B4B56FD0814 /* MainTabView.swift in Sources */,
+				AD90F3D3A01FD011FC55661D /* Player.swift in Sources */,
+				86763BF6EF3C09D30DD4B3D6 /* PlayersEditView.swift in Sources */,
+				E65342F562396F578302A3BA /* RootView.swift in Sources */,
+				B252935E4894591E564DB93F /* Round.swift in Sources */,
+				9EEE4FB03115C7AD5B8B84EF /* RoundView.swift in Sources */,
+				D4B022EFD3D26C27E1B7735A /* RoundsEditView.swift in Sources */,
+				8B864E00826C627BE6A74C3C /* RyderCupApp.swift in Sources */,
+				1B23EE2E577B31DAD375FA62 /* Score.swift in Sources */,
+				EC53616C4EA212EAAE1ACF38 /* ScoringEngine.swift in Sources */,
+				205421AA06D22E53B46F2F33 /* ScoringSubviews.swift in Sources */,
+				5DC239B927E0BB268718889A /* SettingsView.swift in Sources */,
+				113BF73088735163F9C5A7FD /* SideGame.swift in Sources */,
+				A5C46F9B1091EB48E371B662 /* SideGamesView.swift in Sources */,
+				FE1F9C85AF70F7825AF7457E /* Team.swift in Sources */,
+				40384662648BEF2E6DC09DEF /* TeamEditView.swift in Sources */,
+				BCB902F2B5E0EEFCAEAAC114 /* TeamsView.swift in Sources */,
+				8CF6249C25B894ADBCF07C61 /* Tournament.swift in Sources */,
+				7CCBB9300DDAA806F893311C /* TournamentViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDBC6D12A3BDFD989E787E12 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A17F2ABB3232FF7EE50DE5DE /* ScoringEngineTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AC9690D0F3A72F32D169CBA5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B0503391C15D6E18318B6297 /* RyderCup */;
+			targetProxy = 419C3BCDDBC882D210085827 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		09B4658A92F5C5D19C558E8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 6RWZ9FASY7;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		176428F5E2F304F0BFDF6500 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rydercup.app.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RyderCup.app/RyderCup";
+			};
+			name = Release;
+		};
+		2664C8F692DA1A031AE7B34D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = RyderCup/Info.plist;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rydercup.app;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6CE69EA7D3974B077963CEF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rydercup.app.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RyderCup.app/RyderCup";
+			};
+			name = Debug;
+		};
+		B4AEFC834A58B1FCF558E48D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = RyderCup/Info.plist;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rydercup.app;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BE94563D8D5C2E9C34340E3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 6RWZ9FASY7;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1A781081D018149A19131CF0 /* Build configuration list for PBXProject "RyderCup" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE94563D8D5C2E9C34340E3C /* Debug */,
+				09B4658A92F5C5D19C558E8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		44E37357433A4A844BF801A2 /* Build configuration list for PBXNativeTarget "RyderCup" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4AEFC834A58B1FCF558E48D /* Debug */,
+				2664C8F692DA1A031AE7B34D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C3097E7A35FE9B7CB64B2C52 /* Build configuration list for PBXNativeTarget "RyderCupTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CE69EA7D3974B077963CEF8 /* Debug */,
+				176428F5E2F304F0BFDF6500 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 89668C824047FD6A7968C625 /* Project object */;
+}
