@@ -84,6 +84,29 @@ using (var scope = app.Services.CreateScope())
 
 app.UseCors();
 
+// API key guard — all /api/* routes require X-Api-Key matching the API_SECRET env var.
+// Leave / and /health open so Railway's health checks always pass.
+var apiSecret = Environment.GetEnvironmentVariable("API_SECRET")
+    ?? builder.Configuration["ApiSecret"];
+if (string.IsNullOrWhiteSpace(apiSecret))
+    throw new InvalidOperationException(
+        "No API secret configured. Set the API_SECRET environment variable (Railway) or " +
+        "add ApiSecret to appsettings.Development.json (local).");
+
+app.Use(async (ctx, next) =>
+{
+    if (ctx.Request.Path.StartsWithSegments("/api"))
+    {
+        if (!ctx.Request.Headers.TryGetValue("X-Api-Key", out var key) || key != apiSecret)
+        {
+            ctx.Response.StatusCode = 401;
+            await ctx.Response.WriteAsync("Unauthorized");
+            return;
+        }
+    }
+    await next();
+});
+
 app.MapGet("/", () => Results.Ok(new { ok = true, service = "RyderCup API" }));
 app.MapGet("/health", () => Results.Ok(new { ok = true }));
 
