@@ -10,7 +10,8 @@ public record TournamentMetaUpdateRequest(
     List<Round>? Rounds,
     bool? UseGhinHandicaps,
     bool? BirdieEagleBonusEnabled,
-    Dictionary<string, int>? HandicapOverrides
+    Dictionary<string, int>? HandicapOverrides,
+    bool? AutoFetchEnabled
 );
 
 public record ScoreUpsertRequest(string PlayerId, int RoundIndex, int HoleNumber, int Strokes);
@@ -38,6 +39,7 @@ public record TournamentSnapshot(
     bool UseGhinHandicaps,
     bool BirdieEagleBonusEnabled,
     Dictionary<string, int> HandicapOverrides,
+    bool AutoFetchEnabled,
     List<ScoreEntry> Scores,
     List<TeamScoreEntry> TeamScores,
     List<SideGameEntry> SideGames,

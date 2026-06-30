@@ -41,6 +41,7 @@ public static class TournamentEndpoints
             if (req.UseGhinHandicaps is not null) t.UseGhinHandicaps = req.UseGhinHandicaps.Value;
             if (req.BirdieEagleBonusEnabled is not null) t.BirdieEagleBonusEnabled = req.BirdieEagleBonusEnabled.Value;
             if (req.HandicapOverrides is not null) t.HandicapOverrides = req.HandicapOverrides;
+            if (req.AutoFetchEnabled is not null) t.AutoFetchEnabled = req.AutoFetchEnabled.Value;
             t.UpdatedAt = DateTime.UtcNow;
             await db.SaveChangesAsync();
             return Results.Ok(await BuildSnapshot(db, t));
@@ -61,6 +62,7 @@ public static class TournamentEndpoints
         return new TournamentSnapshot(
             t.Id, t.Code, t.Name, t.Date, t.Players, t.Course, t.Rounds,
             t.UseGhinHandicaps, t.BirdieEagleBonusEnabled, t.HandicapOverrides,
+            t.AutoFetchEnabled,
             scores, teamScores, sideGames, t.UpdatedAt
         );
     }

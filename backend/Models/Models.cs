@@ -25,6 +25,11 @@ public class Tournament
     public bool UseGhinHandicaps { get; set; } = false;
     public bool BirdieEagleBonusEnabled { get; set; } = true;
 
+    /// Global admin-controlled toggle: when true (default), every connected
+    /// device polls the API every few seconds. When false, refresh is manual
+    /// only (pull-down / refresh button).
+    public bool AutoFetchEnabled { get; set; } = true;
+
     /// Player id → manual handicap. Overrides GHIN and derived (R1-based) handicap.
     public Dictionary<string, int> HandicapOverrides { get; set; } = new();
 

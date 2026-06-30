@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using RyderCup.Api.Data;
@@ -11,9 +12,11 @@ using RyderCup.Api.Data;
 namespace RyderCup.Api.Migrations
 {
     [DbContext(typeof(RyderCupDbContext))]
-    partial class RyderCupDbContextModelSnapshot : ModelSnapshot
+    [Migration("20260630233202_AddAutoFetchEnabled")]
+    partial class AddAutoFetchEnabled
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
